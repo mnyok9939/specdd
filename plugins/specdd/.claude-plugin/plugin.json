@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin.json",
+  "name": "specdd",
+  "description": "Spec-driven development orchestrator. Turns vague feature requests into production-grade specs before code is written.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Harry"
+  },
+  "homepage": "https://github.com/harry-/specdd",
+  "repository": "https://github.com/harry-/specdd",
+  "license": "MIT",
+  "keywords": [
+    "spec-driven-development",
+    "spec-driven",
+    "agent-skills"
+  ]
+}
