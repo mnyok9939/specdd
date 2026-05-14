@@ -49,7 +49,7 @@ specdd splits the difference. Spec-driven development that **scales down to a 15
 ### Claude Code (recommended)
 
 ```bash
-/plugin marketplace add harry-/specdd
+/plugin marketplace add unboundinnov/specdd
 /plugin install specdd@specdd
 ```
 
@@ -58,7 +58,7 @@ That's it. The skill activates automatically when you ask for any feature work.
 ### Claude Code (manual, no plugin system)
 
 ```bash
-git clone --depth=1 https://github.com/harry-/specdd /tmp/specdd-src
+git clone --depth=1 https://github.com/unboundinnov/specdd /tmp/specdd-src
 cp -r /tmp/specdd-src/plugins/specdd/skills/specdd ~/.claude/skills/
 rm -rf /tmp/specdd-src
 ```
@@ -75,7 +75,7 @@ Or scope to a single project: copy into `.claude/skills/` inside the project ins
 
 ```bash
 mkdir -p ~/.codex/skills
-git clone --depth=1 https://github.com/harry-/specdd /tmp/specdd-src
+git clone --depth=1 https://github.com/unboundinnov/specdd /tmp/specdd-src
 cp -r /tmp/specdd-src/plugins/specdd/skills/specdd ~/.codex/skills/
 rm -rf /tmp/specdd-src
 ```
